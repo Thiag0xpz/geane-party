@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Geane Party – Kits Pegue e Monte</title>
+  <link rel="stylesheet" href="assets/geane-styles.css">
+</head>
+<body>
+
+<section class="gp-storefront" id="topo">
+  <script>
+    window.GEANE_PRODUCTS = [
+      {
+        id: "magali",
+        name: "Kit Pegue e Monte Magali",
+        category: "Tema infantil",
+        tag: "Mais vendido",
+        price: 69,
+        image: "assets/kit-magali.jpeg",
+        description: "Kit Pegue e Monte temático da Magali, alegre e colorido para festas infantis.",
+        includes: ["KIT DE cilindros P M G", "Arco 1,5 metros", "Painel temático", "Bandejas decorativas"]
+      },
+      {
+        id: "fundo-do-mar",
+        name: "Kit Pegue e Monte Fundo do Mar",
+        category: "Tema infantil",
+        tag: "Tema do mar",
+        price: 69,
+        image: "assets/kit-fundo-do-mar.jpeg",
+        description: "Kit Pegue e Monte Fundo do Mar com visual encantador e decoração pronta para montar.",
+        includes: ["KIT DE cilindros P M G", "Arco 1,5 metros", "Painel temático", "Bandejas decorativas"]
+      },
+      {
+        id: "ursinhos-carinhosos",
+        name: "Kit Pegue e Monte Ursinhos Carinhosos",
+        category: "Tema infantil",
+        tag: "Tema delicado",
+        price: 69,
+        image: "assets/kit-ursinhos-carinhosos.jpeg",
+        description: "Kit Pegue e Monte Ursinhos Carinhosos em tons suaves e delicados para uma festa especial.",
+        includes: ["KIT DE cilindros P M G", "Arco 1,5 metros", "Painel temático", "Bandejas decorativas"]
+      },
+      {
+        id: "brawl-stars",
+        name: "Kit Pegue e Monte Brawl Stars",
+        category: "Tema gamer",
+        tag: "Tema gamer",
+        price: 69,
+        image: "assets/kit-brawl-stars.jpeg",
+        description: "Kit Pegue e Monte Brawl Stars com composição moderna e temática gamer para aniversário.",
+        includes: ["KIT DE cilindros P M G", "Arco 1,5 metros", "Painel temático", "Bandejas decorativas"]
+      }
+    ];
+
+    window.GEANE_ASSETS = {
+      "kit-coelhinha.jpg": "assets/kit-coelhinha.jpg",
+      "kit-magali.jpg": "assets/kit-magali.jpg",
+      "kit-fundo-do-mar.jpg": "assets/kit-fundo-do-mar.jpg",
+      "kit-ursinhos.jpg": "assets/kit-ursinhos.jpg",
+      "kit-brawl-stars.jpg": "assets/kit-brawl-stars.jpg",
+      "kit-pink-party.jpg": "assets/kit-pink-party.jpg"
+    };
+  </script>
+
+  <!-- HEADER -->
+  <header class="gp-topbar" id="siteHeader">
+    <div class="gp-top-left">
+      <button class="gp-top-icon" type="button" id="topicMenuOpen" aria-label="Abrir menu de páginas">⋯</button>
+      <button class="gp-top-icon" type="button" id="siteSearchOpen" aria-label="Pesquisar">⌕</button>
+    </div>
+
+    <a class="gp-top-logo" href="#topo" aria-label="Geane Party">
+      <img src="assets/logo-geane-party-topo.svg" alt="Geane Party" width="120" height="46">
+    </a>
+
+    <div class="gp-top-right">
+      <a class="gp-top-icon" href="https://wa.me/351961388502" target="_blank" rel="noreferrer" aria-label="WhatsApp">♙</a>
+      <button class="gp-top-icon gp-top-cart" type="button" data-open-cart aria-label="Abrir carrinho">⌑<span data-cart-count>0</span></button>
+    </div>
+  </header>
+
+  <!-- MENU LATERAL -->
+  <div class="gp-topic-panel" id="topicPanel" aria-hidden="true">
+    <div class="gp-topic-overlay" id="topicOverlay"></div>
+    <nav class="gp-topic-drawer" aria-label="Tópicos do site">
+      <div class="gp-topic-head">
+        <strong>Menu</strong>
+        <button type="button" id="topicMenuClose" aria-label="Fechar menu">×</button>
+      </div>
+      <a href="?gp_page=kits" class="gp-topic-link"><span>🎈</span><b>Kits Pegue e Monte</b><small>Ver catálogo completo</small></a>
+      <a href="?gp_page=como" class="gp-topic-link"><span>✅</span><b>Como funciona</b><small>Passo a passo do pedido</small></a>
+      <a href="?gp_page=pagamento" class="gp-topic-link"><span>💳</span><b>Pagamento</b><small>Informações de MB WAY</small></a>
+      <a href="?gp_page=resumo" class="gp-topic-link"><span>⭐</span><b>Resumo</b><small>Informação principal dos kits</small></a>
+      <a href="https://wa.me/351961388502" target="_blank" rel="noreferrer" class="gp-topic-link gp-topic-link-dark"><span>💬</span><b>WhatsApp</b><small>Falar com a Geane Party</small></a>
+    </nav>
+  </div>
+
+  <!-- PESQUISA HEADER -->
+  <div class="gp-site-search" id="siteSearchBox" aria-hidden="true">
+    <form class="gp-site-search-form" id="gpSearchForm" role="search">
+      <input id="singleKitSearchInput" type="search" placeholder="Pesquisar kit Pegue e Monte..." autocomplete="off">
+      <button type="submit" aria-label="Pesquisar">Pesquisar</button>
+    </form>
+  </div>
+
+  <main>
+    <!-- SECÇÃO KITS -->
+    <section class="gp-kits-section gp-page-section" id="kits" data-gp-page="kits">
+      <div class="gp-section-title">
+        <span>Catálogo</span>
+        <h2>Kits Pegue e Monte</h2>
+      </div>
+
+      <div class="single-kit-search">
+        <label>
+          <span>Pesquisar kits</span>
+          <input id="singleKitSearchInputBottom" type="search" placeholder="Pesquisar kit pegue e monte..." autocomplete="off">
+        </label>
+        <p class="search-result-note" id="searchResultNote"></p>
+      </div>
+
+      <div class="drag-2rows-hint">
+        <span>👆 Arrasta para o lado</span><small>1 linha por vez</small>
+      </div>
+
+      <div class="products-grid drag-2rows-grid" id="productsGrid" aria-live="polite"></div>
+    </section>
+
+    <!-- SECÇÃO COMO FUNCIONA -->
+    <section class="gp-how-section gp-page-section" id="como-funciona" data-gp-page="como">
+      <div class="gp-section-title">
+        <span>Processo</span>
+        <h2>Como funciona o Kit Pegue e Monte?</h2>
+      </div>
+
+      <div class="steps-grid gp-steps-2x2">
+        <article class="step">
+          <strong>01</strong>
+          <h3>Escolhe o tema</h3>
+          <p>Vê os kits disponíveis e escolhe o tema ideal para a festa.</p>
+        </article>
+        <article class="step">
+          <strong>02</strong>
+          <h3>Adiciona ao carrinho</h3>
+          <p>Seleciona o kit e monta o pedido de forma simples.</p>
+        </article>
+        <article class="step">
+          <strong>03</strong>
+          <h3>Envia no WhatsApp</h3>
+          <p>O pedido vai pronto para o número da Geane Party.</p>
+        </article>
+        <article class="step">
+          <strong>04</strong>
+          <h3>Confirma disponibilidade</h3>
+          <p>Confirmamos data, endereço e detalhes finais.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECÇÃO RESUMO -->
+    <section class="gp-lower-offer gp-page-section gp-menu-only" data-gp-page="resumo">
+      <div class="gp-section-title">
+        <span>Resumo</span>
+        <h2>Kits de festa completos</h2>
+        <p>Informação principal do kit e chamada para escolher o tema.</p>
+      </div>
+      <section class="gp-hero-worten">
+        <div class="gp-hero-content">
+          <span class="gp-tag">Kits Pegue e Monte • </span>
+          <h1>Kits Pegue e Monte para festas lindas e práticas.</h1>
+          <p>Escolha o tema, adicione ao carrinho e envie o pedido direto pelo WhatsApp.</p>
+          <div class="gp-hero-actions">
+            <a class="gp-btn gp-btn-primary" href="#kits">Ver kits disponíveis</a>
+            <a class="gp-btn gp-btn-light" href="#como-funciona">Como funciona</a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- SECÇÃO PAGAMENTO -->
+    <section class="gp-payments-section gp-page-section" id="pagamento" data-gp-page="pagamento">
+      <div class="gp-section-title">
+        <span>Pagamento</span>
+        <h2>Método de pagamento</h2>
+        <p>Pagamento simples e rápido.</p>
+      </div>
+      <div class="payment-strip payment-strip-only">
+        <span class="payment-title">Método de pagamento disponível</span>
+        <div class="payment-badges">
+          <span class="payment-badge">MB WAY</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CARRINHO FLUTUANTE -->
+  <button class="floating-cart" type="button" data-open-cart aria-label="Abrir carrinho">
+    🛒 <span data-cart-count>0</span>
+  </button>
+
+  <!-- CARRINHO DRAWER -->
+  <aside class="cart-drawer gp-premium-cart" aria-hidden="true" aria-label="Carrinho de kits">
+    <div class="cart-overlay" data-close-cart></div>
+
+    <div class="cart-panel gp-cart-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="cart-header gp-cart-header">
+        <div>
+          <span class="eyebrow">Pedido Geane Party</span>
+          <h2 id="cartTitle">O teu carrinho</h2>
+          <p>Revê os kits, preenche os dados do evento e envia tudo pelo WhatsApp.</p>
+        </div>
+        <button class="icon-btn gp-cart-close" type="button" data-close-cart aria-label="Fechar carrinho">×</button>
+      </div>
+
+      <div class="gp-cart-progress" aria-label="Etapas do pedido">
+        <span class="active">1. Kits</span>
+        <span>2. Evento</span>
+        <span>3. WhatsApp</span>
+      </div>
+
+      <div class="cart-items gp-cart-items" id="cartItems"></div>
+
+      <div class="cart-summary gp-cart-summary">
+        <div class="gp-total-box">
+          <div>
+            <span>Total estimado</span>
+            <small>Preço dos kits selecionados</small>
+          </div>
+          <strong id="cartTotal">0€</strong>
+        </div>
+
+        <div class="gp-cart-info">
+          <span>💳 Pagamento: <strong>MB WAY</strong></span>
+          <span>📦 Confirmação final feita por WhatsApp</span>
+        </div>
+
+        <div class="order-form gp-order-form">
+          <div class="gp-form-head">
+            <h3>Dados do evento</h3>
+            <p>Ajuda a confirmar disponibilidade e entrega mais rápido.</p>
+          </div>
+
+          <label class="order-field">
+            <span>Data do evento</span>
+            <input type="text" id="orderDate" placeholder="Ex.: 20/07/2026">
+          </label>
+
+          <label class="order-field">
+            <span>Endereço completo do evento</span>
+            <input type="text" id="orderLocation" placeholder="Rua, número, localidade">
+          </label>
+
+          <label class="order-field">
+            <span>Observações adicionais</span>
+            <textarea id="orderNotes" rows="3" placeholder="Horário, entrega, tema ou detalhes importantes"></textarea>
+          </label>
+        </div>
+
+        <div class="gp-cart-actions">
+          <button class="btn btn-primary full gp-checkout-btn" type="button" id="checkoutBtn">Solicitar orçamento pelo WhatsApp</button>
+          <button class="btn btn-soft full gp-clear-btn" type="button" id="clearCartBtn">Limpar carrinho</button>
+        </div>
+
+        <p class="gp-cart-note">Valor estimado. Disponibilidade, entrega e detalhes finais são confirmados pela equipa Geane Party.</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MODAL PRODUTO -->
+  <div class="modal gp-details-modal" aria-hidden="true" id="productModal">
+    <div class="modal-overlay gp-details-overlay" data-close-modal></div>
+
+    <article class="modal-card gp-details-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="icon-btn modal-close gp-details-close" type="button" data-close-modal aria-label="Fechar detalhes">×</button>
+
+      <div class="gp-details-media">
+        <img id="modalImage" src="" alt="">
+        <span class="gp-details-badge" id="modalTag"></span>
+      </div>
+
+      <div class="modal-content gp-details-content">
+        <div class="gp-details-top">
+          <span class="gp-details-eyebrow">Kit Pegue e Monte</span>
+          <h2 id="modalTitle"></h2>
+          <p id="modalDescription"></p>
+        </div>
+
+        <div class="gp-details-price-box">
+          <div>
+            <span>Preço do kit</span>
+            <strong id="modalPrice"></strong>
+          </div>
+          <small>Valor estimado. Confirme disponibilidade, entrega e data pelo WhatsApp.</small>
+        </div>
+
+        <div class="gp-details-info-grid">
+          <div>
+            <strong>🎈 Montagem</strong>
+            <span>Pegue e Monte</span>
+          </div>
+          <div>
+            <strong>📦 Kit base</strong>
+            <span>Cilindros P M G</span>
+          </div>
+          <div>
+            <strong>✨ Arco</strong>
+            <span>1,5 metros</span>
+          </div>
+          <div>
+            <strong>💳 Pagamento</strong>
+            <span>MB WAY</span>
+          </div>
+        </div>
+
+        <div class="gp-details-includes">
+          <h3>O que está incluído</h3>
+          <ul id="modalIncludes"></ul>
+        </div>
+
+        <div class="modal-footer gp-details-footer">
+          <button class="btn btn-primary gp-details-main-btn" type="button" id="modalAddBtn">
+            Adicionar ao carrinho
+          </button>
+          <button class="btn btn-soft gp-details-whatsapp-btn" type="button" id="modalWhatsAppBtn">
+            Solicitar orçamento deste kit
+          </button>
+        </div>
+      </div>
+    </article>
+  </div>
+
+</section>
+
+<script src="assets/geane-app.js"></script>
+</body>
+</html>
